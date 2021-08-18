@@ -4,15 +4,24 @@ body {
   font-weight: 400;
   color: rgba(0, 0, 0, .87);
 }
+* {
+  box-sizing: border-box;
+}
 
-
+a {
+  color: black;
+}
+a:hover{
+  text-decoration-line:none;
+}
 header {
+  position: relative;
   height: 101px;
   box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
 }
 
 .header-container {
-  max-width: 1269px;
+  max-width: 1440px;
   margin: 0 auto;
   height: 100%;
   display: flex;
@@ -22,19 +31,21 @@ header {
 .logo {
   height: 51px;
   width: 51px;
-  
+  margin-left: 35px;
+
 }
 
 
 .logo-svg {
   height: 100%;
-  
+
 }
 
 .left-nav {
   display: flex;
   height: 100%;
   align-items: center;
+  margin-left: 15px;
 }
 
 .left-nav nav ul {
@@ -60,17 +71,21 @@ header {
 .right-nav {
   display: flex;
   align-items: center;
+  margin-right: 35px;
 }
-.find-store{
+
+.find-store {
   display: flex;
   align-items: center;
   font-weight: 600;
   margin-right: 40px;
 }
+
 .find-store:hover {
   color: #008248;
   cursor: pointer;
 }
+
 .find-store i {
   padding-right: 10px;
   font-size: 24px;
@@ -78,7 +93,7 @@ header {
 
 .sign-in {
   padding: 7px 16px;
-  border: 1px solid ;
+  border: 1px solid;
   border-radius: 50px;
   font-weight: 600;
   line-height: 1.2;
@@ -86,15 +101,16 @@ header {
   cursor: pointer;
   transition: all .2s ease;
 }
+
 .sign-in:hover {
   background-color: rgba(0, 0, 0, .06);
- 
+
 
 }
 
 .join-now {
   padding: 7px 16px;
-  border: 1px solid ;
+  border: 1px solid;
   border-radius: 50px;
   font-weight: 600;
   line-height: 1.2;
@@ -102,10 +118,11 @@ header {
   background-color: #000;
   transition: all .2s ease;
   cursor: pointer;
-}
+  }
 
 .join-now:hover {
   background-color: rgba(0, 0, 0, .7);
- 
+
 
 }
+
